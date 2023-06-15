@@ -1,0 +1,53 @@
+nav button{
+    position: relative;
+    background-color: transparent;
+    border-style: none;
+    font-size:120%;
+}
+nav i{
+    color:#6a16f6;
+}
+ul{
+ 
+    padding:0px;
+    
+}
+li{
+    padding:0px 10px;
+    margin-bottom:20px;
+    list-style: none;
+    border-left:2px solid transparent;
+
+  
+}
+.signal{
+    position: relative;
+}
+#chat_signal_btn{
+    
+    position: absolute;
+    top:2%;
+    left:2%;
+    background-color: transparent;
+    border-radius: 50%;
+    width:10px;
+    height: 10px;
+}
+#notification_signal_btn{
+    
+    position: absolute;
+    top:2%;
+    left:2%;
+    background-color: transparent;
+    border-radius: 50%;
+    width:10px;
+    height: 10px;
+}
+.show_signal{
+    background-color: #6a16f6e6 !important;
+    box-shadow: 0px 0px 3px 1px #12002ee6;
+}
+.active_btn{
+    transition: 0.5s all;
+    border-left-color:#6a16f6 !important;
+}

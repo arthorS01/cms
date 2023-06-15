@@ -1,0 +1,23 @@
+{
+    "name": "stephen/cms",
+    "description": "online complaint management system",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MyApp\\":"src",
+            "src\\controller\\":"src/controller",
+            "src\\model\\":"src/model",
+            "src\\view\\":"src/view",
+            "app\\":"app"
+        }
+    },
+    "authors": [
+        {
+            "name": "stephenArthor15",
+            "email": "stephenarthor90@gmail.com"
+        }
+    ],
+    "require": {
+        "cboden/ratchet": "^0.4.4"
+    }
+}

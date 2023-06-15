@@ -1,0 +1,26 @@
+main{
+    display: flex;
+    height:100vh;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+#open_connection_container{
+    height:50vh;
+    width:50vh;
+    text-align: center;
+
+}
+#open_connection_container button{
+    padding:10px 15px;
+    border-style:none;
+    border-radius: 10px;
+    background-color: #7719ff;
+    width:50%;
+    color:white;
+    margin-bottom: 20px;
+}
+#open_connection_container p{
+    text-align:center;
+    color:darkgray;
+}

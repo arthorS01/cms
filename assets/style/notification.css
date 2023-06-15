@@ -1,0 +1,169 @@
+
+#notification_area{
+    padding:20px;
+    min-height:80vh;
+    max-height:80vh;
+    overflow-y:scroll; 
+    background:white;
+    box-shadow:0px 0px 3px 1px lightgrey;
+}
+
+#notification_dashboard{
+    display: flex;
+    height:10vh;
+    margin-bottom:5%;
+    width:50%;
+    max-width: 100%;
+
+}
+
+.notification .headline button{
+    border-style:None;
+    padding:5px;
+    border-radius:50%;
+    color:  #6a16f6;
+    margin-left:2%;
+}
+
+#notification_dashboard div{
+    flex: 1;
+    position: relative;
+    margin-right: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: monospace;
+}
+#total_count{
+    background-color: #6a16f6;
+}
+#seen_count{
+    background-color: #9b5de5;
+}
+#unseen_count{
+    background-color: #F15bb5; 
+}
+
+.unseen{
+    border-left: 2px solid #F15bb5;
+}
+.notification{
+    box-shadow: 0px 0px 3px 0.5px lightgrey;
+    height: 8vh;
+    overflow:hidden;
+    transition: all 0.7s;
+    padding:5px;
+    background:white;
+}
+.notification .headline p:nth-child(4) span{
+    color:grey;
+}
+
+
+.notification .headline{
+    display: flex;
+    padding:10px;
+}
+
+.notification .headline p{
+    flex:2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0%;
+
+}
+.details_area{
+    border:1px solid lightgrey;
+    border-radius: 20px;
+    position: relative;
+    opacity:0;
+    transition: all 0.5s;
+  
+}
+.notification .headline p:first-child{
+    flex:0.5;
+    font-size:300%;
+    margin:0px;
+    display:inline;
+    width:100%;
+    text-align:center;
+}
+.notification .headline p:nth-child(2){
+    flex:2.5; 
+}
+.seen_notice{
+    border-left: 2px solid #9b5de5;
+}
+
+.show_details{
+    height: 50vh;
+    overflow-y:scroll ;
+}
+.hide_details p:nth-child(4) button i{
+    transform:rotate(180deg);
+}
+
+.show_details p:nth-child(4) button i{
+    display: block;
+   transform:rotate(180deg);
+}
+.show_details .option{
+    display: flex ;
+    opacity: 1;
+}
+.show_details .details_area{
+   opacity:1;
+}
+.detail_entry{
+    display: flex;
+    min-width:30% ;
+    max-width:50% ;
+    justify-content: space-between;
+    padding:0px 20px;
+    border-bottom:1px solid lightgrey;
+}
+.option{
+    position:absolute;
+    bottom:50%;
+    right:0%;
+    width:30%;
+    display:flex;
+    justify-content:space-evenly;
+    opacity: 0;
+    transition: all 0.5s;
+
+}
+.option button{
+    border-style:none;
+    padding:5px 10px;
+    border-radius:10px;
+    background:transparent;
+    
+}
+.accept_btn{
+
+    color:#9b5de5;
+    padding: 5px !important;
+    border-radius: 5px;
+    border: 1px solid #9b5de5 !important;
+}
+
+.decline_btn{
+
+    color:#F15bb5;
+    padding: 5px !important;
+    border-radius: 5px;
+    border: 1px solid #F15bb5 !important;
+}
+.trash_btn {
+    color:#F15bb5 !important;
+    background-color: transparent;
+}
+.trash_btn button{
+
+    background-color: transparent;
+}
+
+.trash_btn button i{
+    color:#F15bb5 !important;
+}

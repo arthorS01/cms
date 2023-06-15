@@ -1,0 +1,538 @@
+/*
+* admin complaint area
+*/
+
+#complaint_container #dashboard{
+
+    display:flex;
+    width:50%;
+    max-width:100%;
+    height:10vh;
+}
+
+#total_complaints{
+    flex:1;
+    position:relative;
+    background-color:#6a16f6;
+    margin-right:20px;
+    border-radius:10px;
+       color:white;
+    font-family:monospace;
+}
+#total_special_cases{
+    flex:1;
+    position:relative;
+    border-radius:10px;
+    color:white;
+    font-family:monospace;
+    background-color:#404350;
+}
+label i{
+    color:#6a16f6e6;
+}
+#complaints_area #control_area{
+    margin:20px 0px;
+}
+#filter_value{
+    color:#6a16f6e6;
+    border-style:none;
+    margin-right:2%;
+}
+.text{
+    position:absolute;
+    top:3%;
+    left:3%;
+}
+.count{
+    position:absolute;
+    bottom:0%;
+    right:1%;
+    font-size:180%;
+}
+.offline_dot,.online_dot{
+    margin-top:30%;
+    display:inline-block;
+    padding:5px;
+    height:10px;
+    width:10px;
+    border-radius:50%;
+    margin-left: 10px;
+    margin-right:10px;
+}
+.offline_dot{
+    background-color:lightgrey;
+}
+.online_dot{
+    background-color:#6a16f6e6;
+}
+#case_area{
+    padding:20px;
+    min-height:80vh;
+    max-height:80vh;
+    overflow-y:scroll;   
+    box-shadow:0px 0px 3px 1px lightgrey   
+    }
+    table{
+        text-align:center;
+        width:100%;
+    }
+    tr{
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+td{
+    padding:5px;
+}
+th{
+    font-family:system-ui;
+    padding:10px;
+}
+tbody tr{
+   box-shadow:0px 0px 2px 0px darkgrey;
+    border-radius:20px;
+}
+
+    #case_area button{
+        border-style:none;
+        padding:5px 10px;
+        border-radius:10px;
+        cursor:pointer;
+    }
+    .view_complaint_btn{
+        background-color:#6a16f6;
+        color:white;
+        border-style:none;
+        padding:5px 10px;
+        border-radius:10px;
+        cursor:pointer;
+    }
+.refer_btn{
+    border:1px solid #6a16f6;
+    color:#6a16f6
+}
+.student_case{
+    position: relative;
+    right: -15%;
+    background-color: #d3d3d380;
+    padding:5px;
+    width:80%;
+    max-height: 70%;
+    overflow-y: auto;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+}
+    .case_view_container{
+        display: none;
+        position:absolute;
+        background-color:#000000ed;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        align-items:center;
+        justify-content:center;
+    }
+    .case_view{
+        background-color: white;
+        border-radius:10px;
+        height: 70%;
+        width:50%;
+        box-shadow: 0px 0px 3px 2px grey;
+        position:relative;
+    }
+    .case_header{
+        display: flex;
+        height:20%;
+        padding:5px
+    }
+.case_files{
+    max-height:40vh;
+    overflow:auto;
+}
+    .background_image{
+        flex:1;
+        margin-right:2%;
+        border-radius:50%;
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    .names{
+        flex:4;
+        display: flex;
+        align-items: center;
+    }
+    .close_view_btn{
+        position: absolute;
+        top:2%;
+        right:2%;
+    }
+    #seen,#special,#active{
+      display: none; 
+    }
+    .no_case{
+        color: darkgray;
+        text-align: center;
+    }
+
+    /*student*/
+    #overlay{
+        display: none;
+        position:absolute;
+        top:0%;
+        height:100%;
+        padding:0px;
+        margin:0px;
+        background:#000000d4;
+        width:89%;
+        align-items:center;
+        justify-content:center;
+    }
+ 
+    #student_area{
+        padding:10px;
+        display: flex;
+        width:100%;
+    }
+    #student_area p{
+        font-family: sans-serif;
+    }
+    #student_area #large_text{
+        font-size: 130%;
+        
+    }
+    #complain_btn{
+        flex:1;
+        display: flex;
+        align-items: center;;
+        justify-content:center;
+    }
+    #greeting{
+
+        flex:1;
+    }
+    #complain_btn i{
+        color:#6a16f6;
+        padding:10px;
+        background-color: #d0c3e4;
+        border-radius: 50%;
+        margin-right:10px;
+    }
+    #complain_btn button{
+        font-size:130%;
+        padding:15px 15px;
+        border-radius: 10px;
+        border-style:none;
+        box-shadow: 0px 0px 3px 0px grey;
+    }
+    .drop_btn{
+        background-color:#c93868ef;
+        color:white ;
+        border-style:none;
+        padding:5px 10px;
+        border-radius:10px;
+        cursor:pointer;
+    }
+#student_complaint_form{
+    font-family:sans-serif;
+    position:relative;
+    padding:10px 15px;
+    background:white;
+    width:60%;
+    border-radius:5%;
+    overflow-y:scroll;
+    font-size:90%;
+    box-shadow:0px 0px 5px 1px black;
+}
+#submit_complaint_btn_area{
+    padding:15px;
+    width:100%;
+    text-align:center;
+    background:white;
+    box-shadow:0px -3px 0.5px  #6a16f62e;
+}
+
+#submit_complaint_btn_area input[type="submit"]{
+    padding:8px 25px;
+    border-radius:10px;
+    border-style:None;
+    background-color:#6a16f6;
+    color:white;
+}
+.close_btn,.close_view_btn{
+    position:absolute;
+    right:1%;
+    top:1%;
+    padding:8px 10px;
+    border-radius:50%;
+    border:1px solid #c93868;
+    color:#c93868;
+    background:transparent;
+}
+
+#student_complaint_form select{
+    border:1px solid #6a16f6;
+    color:#541cb0;
+    min-width:20%;
+    max-width:30%;
+    padding: 8px 10px ;
+    border-radius:10px;
+    margin-top:10px;
+}
+#student_complaint_form textarea{
+    resize:none;
+    border:1px solid #6a16f6;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+#student_complaint_form input[type="file"],#student_complaint_form input[type="radio"]{
+    margin-top:10px;
+}
+#student_complaint_form div{
+    margin-top:10px;
+}
+.complaint_detail{
+    color:gray;
+}
+file_view{
+    background:#8080800d;
+    padding:15px;
+    overflow:hidden;  
+    width:80%;
+}
+.status{
+    position:absolute;
+    bottom:1%;
+    right:1%;
+    padding:5px;
+    border-radius:5px;
+}
+
+.sent{
+    background:lightblue;
+    position:absolute;
+    bottom:1%;
+    right:1%;
+    padding:5px;
+    border-radius:5px;
+}
+
+.seen,.unseen,.special,.active{
+    position:absolute;
+    bottom:1%;
+    left:1%;
+    padding:5px;
+    border-radius:5px;
+    
+}
+
+.seen{
+       border:1px solid #0b5142;
+       color: #0b5142;
+}
+.unseen{
+    border:1px solid #c93868;
+    color:#c93868;
+}
+.active{
+    border:1px solid #541cb0;
+    color:#541cb0;
+}
+.special{
+    background:darkgray;
+    color:darkgray;
+}
+.case_body p{
+    background:white;
+    box-shadow:0px 0px 3px 1px #80808066;
+    padding:5px;
+    max-width:70%;
+    max-height:60%;
+    border-radius:10px;
+    border-top-left-radius:0px;
+    margin-left:10px;
+}
+.file_tile{
+    position:relative;
+    width:80%;
+    margin:10%;
+    height:20vh;
+    display:flex;
+    justify-content:center;
+  
+    border:1px solid lightblue;
+}
+#file_upload_form{
+
+    position:absolute;
+    bottom:1%;
+    right:1%;
+    padding:5px;
+    border-radius:5px;
+}
+#file_upload_form input[type="file"]{
+    display:none;
+}
+.file_tile img{
+    
+    display:block;
+    height:auto;
+    width:auto;
+    
+    
+}
+.file_tile .file_controll_area{
+    position:absolute;
+    bottom:0%;
+    margin:0%;
+    left:0%;
+    right:0%;
+    margin-top:2%;
+    border-style:none;
+    border-top:1px solid lightgrey;
+    padding-top:5px;
+    padding-left:5%;
+    padding-right:5%;
+    display:flex;
+    justify-content:space-evenly;
+    background-color: white;
+}
+.file_controll_area button i{
+    color:#1a93ba;
+ 
+}
+.file_controll_area button{
+    background-color: transparent ;
+    border-style: none ;
+}
+.referal_container{
+    position:absolute;
+    right:8%;
+    box-shadow:0px 0px 5px 1px lightgrey;
+    padding:10px;
+    border-radius:10px;
+    border-top-right-radius:0px;
+    width:40%;
+    display: none;
+    background-color: white;
+}
+.referal_container button{
+    color:#6a16f6;
+}
+
+.connection_details_area{
+    display: flex;
+    margin-bottom:5%;
+    position: relative;
+    
+}
+.connection_user_details{
+
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+   
+
+}
+
+.connection_overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: #ffffff96;
+    display:none;
+}
+
+.connection_user_details .offline_dot,.connection_user_details .online_dot{
+    margin-top:0% !important;
+    display: inline !important;
+}
+#refresh_btn {
+    border-style:none;
+    color:#6a16f6;
+    background-color: transparent;
+}
+.refered_case_details{
+    position: absolute !important;
+    box-shadow: 0px 0px 5px 2px lightgray !important;
+    right:5%;
+    background:white;
+    padding:5px;
+    min-width:30%;
+    border-radius:10px;
+    border-top-right-radius:0px;
+    display: none;
+}
+.refered_case_details div{
+    display:flex;
+}
+
+.refered_case_details>div{
+
+    margin-top:2%;
+    margin-bottom:2%;
+    height:6vh;
+}
+
+.case_header .background_image{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.case_header .names{
+   
+    flex:7
+}
+#share_to_view{
+    padding: 10%;
+    opacity:0;
+    display: none;
+    border-radius:10px;
+    position:absolute;
+    top:0%;
+    background:white;
+    width:100%;
+    height:100%; 
+    transition:all 0.5s;
+}
+.show_view{
+    display: block !important;
+    opacity: 1 !important; 
+}
+#share_to_view .go_back{
+    position:absolute;
+    top:5%;
+    left:5%;
+}
+.error{
+    color:red ;
+     margin:0%;
+    width:90%;
+    margin-left:5%;
+    margin-right: 5%;
+    background-color: #ff00001c;
+    padding:5px ;
+    text-align: center;
+    visibility: hidden;
+    }
+    #file_message_caption{
+    
+        padding:10px 15px;
+        border-style:none;
+        
+    }
+    #student_complaint_area{
+        box-shadow:0px 0px 3px 1px lightgrey;
+        border-top-left-radius:20px;
+        background:white;
+        height:80vh;
+        max-height:80vh;
+        overflow-y:auto;
+    }
+    #student_complaint_area .share_btn,#student_complaint_area .delete_file_btn{
+        display: none !important;
+    }

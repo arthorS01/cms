@@ -1,0 +1,38 @@
+#settings_container{
+    background:#6a16f600;
+}
+
+#settings_container section{
+    padding:10px;
+    border: 1px solid #7719ff3b;
+    min-height: 10vh;
+    margin:5px 0px;
+    border-radius:10px;
+}
+#settings_container .fill{
+    width:100%;
+    padding:15px 10px;
+    border:1px solid #7719ff3b;
+    border-radius:10px;
+}
+.form_item{
+
+    padding:5px;
+    position:relative;
+    width:50%;
+}
+
+.form_item label{
+    color:#7719ff;
+    position:absolute;
+    top:0%;
+    background:white;
+}
+#settings_container .btn{
+    padding:8px 15px;
+    background-color: #2613d4;
+    border-style:none;
+    color:white;
+    border-radius: 10px;
+
+}

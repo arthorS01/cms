@@ -1,0 +1,100 @@
+
+#login_container{
+    
+    display: flex;
+    width:50%;
+    height:60vh;
+    align-items: center;
+    overflow-y: auto;
+    max-height: 80vh;
+    padding:10px;
+}
+main{
+    height:80vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+ 
+#login_container #illustration{
+    flex:1;
+}
+#login_container #form_container{
+    flex:1;
+    box-shadow:0px 0px 3px 1px lightgray;
+    padding:20px 30px;
+    text-align: center;
+}
+ 
+i{
+    color:#2196f3db;
+    font-size:400%;
+    border:1px solid lightgray;
+    border-radius:50%;
+    padding:10px;
+  
+}
+
+.error,#error_board{
+color:red ;
+ margin:0%;
+    width:90%;
+    margin-left:5%;
+    margin-right: 5%;
+    background-color: #ff00001c;
+    padding:5px ;
+    text-align: center;
+    visibility: hidden;
+}
+
+ #image_icon{
+    margin-bottom:20px;
+}
+ .input_container{
+    position: relative;
+}
+.input_container div{
+    padding:10px 20px ;
+    margin-bottom: 20px;
+}
+ .input_container .label{
+    background-color: white;
+    position: absolute;
+    top:0%;
+    border-radius: 5px;
+    color:#2196f3db;
+}
+ .input_container input[type="text"],.input_container input[type="password"],.input_container input[type="email"], select{
+    border:1px solid lightgray;
+    width:100%;
+    padding:10px;
+    border-radius:10px;
+    background-color: white !important;
+    outline:none;
+    transition: all 0.5s;
+}
+
+#loin_container form{
+    position: relative;
+}
+.form_data{
+    border-style:none;
+    padding:5px 10px;
+}
+ #form button{
+    padding:10px 15px;
+    border-style:none;
+    border-radius: 10px;
+    background-color: #2196f3db;
+    width:50%;
+    color:white;
+    margin-bottom: 20px;
+}
+ a{
+    text-decoration: none;
+    color:darkgray;
+}
+
+input:focus{
+    box-shadow: 0px 0px 3px 1px #2196f3db;
+}

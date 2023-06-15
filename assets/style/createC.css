@@ -1,0 +1,51 @@
+#cards_area{
+    margin-top:10%;
+    display:flex;
+    height:50%;
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
+    justify-content:space-between;
+    overflow-x:auto;
+    padding:10px;
+}
+.user_card{
+    width:30%;
+    box-shadow:0px 0px 5px 0px lightgrey;
+    border-radius:15px;
+    text-align:center;
+}
+.user_card img{
+    display:block;
+    height:40%;
+    max-width:50%;
+    min-width:50%;
+    margin-top:10%;
+    margin-bottom:5%;
+    margin-left:25%;
+    margin-right:25%;
+    border-radius:50%;
+}
+.user_card button{
+    padding:8px 15px;
+    border-style:none;
+    margin-top:10%;
+    border-radius:10%;
+}
+#intro_text{
+    color:darkgray;
+    text-align:center;
+    font-size:200%;
+    font-family:system-ui
+}
+main{
+    height:80vh;
+}
+#outro_text{
+    color:darkgray;
+    text-align:center;
+    font-family:system-ui;
+    width:60%;
+    margin-left:20%;
+    margin-right: 20%;
+}

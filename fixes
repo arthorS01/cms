@@ -1,0 +1,9 @@
+
+//sending messages between connections
+//complaint area for admin
+//chat area for admin
+//handle creating connections just as open connections are handled
+// how would i notify the course adviser that a complaint was made
+// when a user is created, the user details table should be updated
+SELECT users.id, users.type, users.firstname, users.lastname, user_details.background_image, user_details.online FROM users INNER JOIN user_details on users.id=user_details.user_id
+#learn about joins
